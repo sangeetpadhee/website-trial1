@@ -1,3 +1,7 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body{
     background: white;
     /*background: #e2e9f4;*/
@@ -8,6 +12,7 @@ body{
     margin: auto;
     height: auto;
     width: 100%;
+    overflow-x: none;
 }
 .upper{
     height: auto;
