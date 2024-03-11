@@ -312,7 +312,7 @@ body{
     display: none;
 }
 
-@media screen and (max-width: 398px) and (min-width: 320px) {
+@media screen and (max-width: 450px) and (min-width: 320px) {
 
 
 /*      UPPER BELOW         */
@@ -342,8 +342,8 @@ body{
     width: 70%;
 }
 #carupper{
-    
-    height: 20vh;
+    margin-right: -5px;
+    height: 18vh;
 }
 
 /*              BY PRICE      */
@@ -416,7 +416,7 @@ body{
 /*             MORE FILTER      */
 
 .formorefilter{
-    font-size: 22px;
+    font-size: 21px;
     margin-top: 25px;
     display: flex;
     flex-direction: column;
@@ -438,7 +438,7 @@ body{
 
 
 .end{
-    font-size: 14px;
+    font-size: 13px;
     display: flex;
     justify-content: center;
     align-items: center;
