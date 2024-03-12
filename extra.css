@@ -202,12 +202,3 @@
 
 /*          END PART      */
 
-
-
-@media screen and (max-width: 398px) and (min-width: 320px) {
-
-  .slider-item img{
-    height: 210px;
-}
-
-}

@@ -309,14 +309,13 @@ body{
 
 /*          MENU            */
 
-.menu{
-    height: 300px;
-    width: 60%;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid black;
-    border-radius: 5px;
-    margin-top: 40px;
+.menubar{
+    height: 600px;
+    width: 50%;
+    background-color: aqua;
     position: fixed;
+    margin-top: 40px;
+    border-radius: 5px;
     display: none;
 }
 
