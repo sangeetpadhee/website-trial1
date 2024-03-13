@@ -169,18 +169,21 @@ body{
   /*        CAR LIST        */
 
   .allcar{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
     margin: auto;
-    width: 90%;
     margin-top: 30px;
     height: 400px;
     overflow-y: auto;
   }
   .allcarlist{
-    margin-left: -15px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    margin-top: -10px;
   }
 
   #carnamelist{
@@ -196,22 +199,24 @@ body{
     gap: 5px;
   }
 
-  .carnameallcarlist{
-    font-size: 25px;
-  }
+
   .priceallcarlist{
+    font-size: 12px;
     font-weight: 600;
   }
 
   .carimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7px;
     height: 100px;
-    width: 150px;
+    width: 170px;
     border-radius: 10px;
   }
   .carimg img{
     width: 100%;
     height: auto;
-    display: block;
   }
 
   .showmore{
@@ -297,6 +302,58 @@ body{
   width: auto;
   height: 70%;
   display: block;
+}
+ /*        CAR LIST        */
+
+ .allcar{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  height: 400px;
+  overflow-y: auto;
+}
+.byallcarlist{
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: -10px;
+}
+
+#bycarnamelist{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bynameprice{
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.bypriceallcarlist{
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.bycarimg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 7px;
+  height: 100px;
+  width: 170px;
+  border-radius: 10px;
+}
+.bycarimg img{
+  width: 100%;
+  height: auto;
 }
 
 /*              BY PRICE      */
@@ -463,8 +520,3 @@ body{
   width: 100%;
 }
 
-@media screen and (max-width: 409px) and (min-width: 320px) {
-
-
-  
-  }
