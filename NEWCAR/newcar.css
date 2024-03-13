@@ -314,7 +314,12 @@ body{
   overflow-y: auto;
  }
 /*        CAR MAKE LIST        */
-
+.compmakeallcar {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+ }
 
 
  /*        CAR BODY TYPE LIST        */

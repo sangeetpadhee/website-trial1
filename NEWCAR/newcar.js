@@ -666,7 +666,7 @@ const bodyshowInHtml = marutisuzuki.map((project, index)=>{
 }
 function tat(){
 const bodylist = document.querySelector(".compmakeallcar");
-bodylist.style.height="300px";
+bodylist.style.height="310px";
 const bodyshowInHtml = tata.map((project, index)=>{
     return`
     <div class="byallcarlist">
@@ -684,7 +684,7 @@ const bodyshowInHtml = tata.map((project, index)=>{
 }
 function hyunda(){
 const bodylist = document.querySelector(".compmakeallcar");
-bodylist.style.height="300px";
+bodylist.style.height="310px";
 const bodyshowInHtml = hyundai.map((project, index)=>{
     return`
     <div class="byallcarlist">
