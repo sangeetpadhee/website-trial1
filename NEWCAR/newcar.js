@@ -452,7 +452,7 @@ let abovethirt=[
 
 
 
-const list = document.querySelector(".allcar");
+/*const list = document.querySelector(".allcar");
 const showInHtml = tata.map((project, index)=>{
     return`
     <div class="allcarlist">
@@ -469,7 +469,7 @@ const showInHtml = tata.map((project, index)=>{
 .join("");
 
 list.innerHTML= showInHtml;
-
+*/
 
 function hatch(){
     const bodylist = document.querySelector(".bodyallcar");
@@ -1060,3 +1060,122 @@ const bodyshowInHtml = astonMartin.map((project, index)=>{
     
     bodylist.innerHTML= bodyshowInHtml;
 }
+
+
+//SEARCH BAR
+
+const handleSearchPosts = (query) => {
+    const searchQuery = query.trim().toLowerCase();
+    
+    if (searchQuery.length <= 1) {
+      resetPosts()
+      return
+    }
+    
+    let searchResults = [...postsData].filter(
+      (post) =>
+        post.categories.some((category) => category.toLowerCase().includes(searchQuery)) ||
+        post.title.toLowerCase().includes(searchQuery)
+    );
+    
+    if (searchResults.length == 0) {
+      searchDisplay.innerHTML = "No results found"
+    } else if (searchResults.length == 1) {
+      searchDisplay.innerHTML = `1 result found for your query: ${query}`
+    } else {
+      searchDisplay.innerHTML = `${searchResults.length} results found for your query: ${query}`
+    }
+  
+    postsContainer.innerHTML = "";
+    searchResults.map((post) => createPost(post));
+  };
+  
+  const resetPosts = () => {
+    searchDisplay.innerHTML = ""
+    postsContainer.innerHTML = "";
+    postsData.map((post) => createPost(post));
+  };
+  
+  const search = document.getElementById("search");
+  
+  let debounceTimer;
+  const debounce = (callback, time) => {
+    window.clearTimeout(debounceTimer);
+    debounceTimer = window.setTimeout(callback, time);
+  };
+  
+  search.addEventListener(
+    "input",
+    (event) => {
+      const query = event.target.value;
+      debounce(() => handleSearchPosts(query), 500);
+    },
+    false
+  );
+
+
+  const pol = document.querySelector(".menubar");
+
+function menu(){
+  pol.style.display="block";
+}
+
+window.addEventListener('mouseup',function(event){
+  if(event.target != pol && event.target.parentNode != pol){
+      pol.style.display = 'none';
+  }
+}); 
+
+const sm = document.querySelector(".socialmedia");
+
+function user(){
+  sm.style.display="block";
+}
+
+window.addEventListener('mouseup',function(event){
+  if(event.target != sm && event.target.parentNode != sm){
+    sm.style.display = 'none';
+  }
+}); 
+
+
+
+const ul = document.querySelector(".searchbarallcar");
+  
+  function displayCars(cars) {
+    ul.innerHTML = ''; // Clear previous content
+    cars.forEach((car) => {
+      const listItem = document.createElement('div');
+      listItem.classList.add('searchbarallcarlist');
+      listItem.innerHTML = `
+        <div class="searchbarcarimg">
+          <img src="${car.img}" alt="" class="searchbarimgallcarlist">
+        </div>
+        <span class="searchbarnameprice">
+          <span class="searchbarcarnameallcarlist" style="font-size: 17px;">${car.Name}</span>
+          <span class="searchbarpriceallcarlist">${car.price}</span>
+        </span>
+      `;
+      ul.appendChild(listItem);
+    });
+  }
+  
+  displayCars(suvv);
+
+
+  const searchInput = document.getElementById("search");
+
+searchInput.addEventListener("input", function () {
+  const searchTerm = this.value.toLowerCase();
+  const searchWords = searchTerm.split(" ").filter(word => word.trim() !== "");
+  const filteredCars = suvv.filter(car => {
+    const carNameWords = car.Name.toLowerCase().split(" ");
+    return searchWords.every(word => carNameWords.some(carWord => carWord.includes(word)));
+  });
+  displayCars(filteredCars);
+  if(searchInput.value==""){
+  ul.style.height="310px";
+}else{
+    ul.style.height="auto"; 
+}
+});
