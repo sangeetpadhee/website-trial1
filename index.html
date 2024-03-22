@@ -19,7 +19,7 @@
             </div>
             <img src="PIC/SANTIK LETTERBLACK.png" alt="" id="uppersantik">
             <div class="followus">
-                <i class="fa-solid fa-user-plus"></i>
+                <i class="fa-solid fa-user-plus" onclick="user()"></i>
             </div>
         </div>
         <div class="border"></div>
@@ -53,6 +53,11 @@
                 </label>
             </form>
         </div>
+        <!--     CAR SHOW SEARCH BAR     -->
+        <div class="search-display"></div>
+        <div class="searchbarallcar">    
+                <!-- CAR LIST-->
+        </div>
         <div class="choosesection">
             <div class="onerow">
                 <a href="CAR NEWS/carnews.html" class="carnews"></a>
@@ -64,44 +69,16 @@
             </div>
         </div>
         <div class="byprice">
-            <span class="bypriceupperletter">Search Car By Budget <hr>  </span>
+            <span class="bypriceupperletter">Popular Car By Budget <hr>  </span>
             <div class="upperbyprice">
-                <button class="budget">1-5 Lakh</button>
-                <button class="budget">5-10 Lakh</button>
-                <button class="budget">10-15 Lakh</button>
-                <button class="budget">15-30 Lakh</button>
-                <button class="budget">Above 30 Lakh</button>
+                <button class="budget" id="oneto" onclick="fivelk()">1-5 Lakh</button>
+                <button class="budget" onclick="tenlk()">5-10 Lakh</button>
+                <button class="budget" onclick="fifteenlk()">10-15 Lakh</button>
+                <button class="budget"onclick="thirty()">15-30 Lakh</button>
+                <button class="budget" onclick="aboveth()">Above 30 Lakh</button>
             </div>
-            <div class="bypricecarlist">
-                <div class="bypricecardetail1">
-                    <div class="bycarpricedetailitem">
-                        <img src="PIC/TRIAL.jpg" alt="" height="60px">
-                        <span style="display: flex; flex-direction:column ;">
-                        <span>Tata Nexon</span>
-                        <span style="font-weight: 600;">8-16Lk</span></span>
-                    </div>
-                    <div class="bycarpricedetailitem">
-                        <img src="PIC/TRIAL.jpg" alt="" height="60px">
-                        <span style="display: flex; flex-direction:column ;">
-                        <span>Tata Nexon</span>
-                        <span style="font-weight: 600;">8-16Lk</span></span>
-                    </div>
-                 </div>
-                <div class="bypricecardetail2">
-                    <div class="bycarpricedetailitem">
-                        <img src="PIC/TRIAL.jpg" alt="" height="60px">
-                        <span style="display: flex; flex-direction:column ;">
-                        <span>Tata Nexon</span>
-                        <span style="font-weight: 600;">8-16Lk</span></span>
-                    </div>
-                    <div class="bycarpricedetailitem">
-                        <img src="PIC/TRIAL.jpg" alt="" height="60px">
-                        <span style="display: flex; flex-direction:column ;">
-                        <span>Tata Nexon</span>
-                        <span style="font-weight: 600;">8-16Lk</span></span>
-                    </div>
-                </div>
-               
+            <div class="bypricecardetail1">
+                <!--CAR LIST    -->
             </div>
         </div>
         <div class="formorefilter">
@@ -148,31 +125,56 @@
         <div class="popularcar">
             <div class="outerredbar">
                 <div class="redbarlatestnews"></div>
-                <span style="margin-top: 10px;">Popular Car : <hr>   </span>
+                <span style="margin-top: 10px;">Car Renderings : <hr>   </span>
             </div>
             <div class="popularcarlist">
                 <div class="popularcarbody">
-                    <img src="PIC/TRIAL.jpg" alt="" height="200px" style="margin-left: 20px;">
-                    <span style="font-family:sans-serif;">TATA NEXON</span>
-                    <Span style="font-size: 15px; font-weight:600;">5.4-16 Lakh (Ex-Show)</Span>
                 </div>
                 <div class="popularcarbody">
-                    <img src="PIC/TRIAL.jpg" alt="" height="200px" style="margin-left: 20px;">
-                    <span style="font-family:sans-serif;">TATA NEXON</span>
-                    <Span style="font-size: 15px; font-weight:600;">5.4-16 Lakh (Ex-Show)</Span>
-                    </div>
+                </div>
                 <div class="popularcarbody">
-                    <img src="PIC/TRIAL.jpg" alt="" height="200px" style="margin-left: 20px;">
-                    <span style="font-family:sans-serif;">TATA NEXON</span>
-                    <Span style="font-size: 15px; font-weight:600;">5.4-16 Lakh (Ex-Show)</Span>
-                    </div>    
+                </div>  
+                <div class="formorefilter" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    <span>Click Below For More Renderings</span>
+                    <a href="NEWCAR/newcar.html"><button class="formorefilterbutton">Click Here</button></a>
+                </div>  
             </div>
         </div>
         <div class="end">
             <span>This website is developed and hosted by Sangeet Kumar Padhee</span>
-            <span><i class="fa-regular fa-copyright"></i> Copyright @   Santik Automotive</span>
+            <div class="follow">
+                <span>Follow Us On</span>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <span><i class="fa-regular fa-copyright"></i> Copyright Santik Automotive</span>
+            
         </div>
-        <div class="menubar"></div>
+        <div class="menubar">
+            <ul class="menubar1">
+                <li class="menulist"><a href="" class="menulist1"><i class="fa-solid fa-house" style="margin-top: -3px; margin-right: 15px;"></i>Home</a></li>
+                <li class="menulist"><a href="" class="menulist1"><i class="fa-solid fa-magnifying-glass"style="margin-top: -2px; margin-right: 15px;"></i>Search New Car</a></li>
+                <li class="menulist"><a href="" class="menulist1"><i class="fa-solid fa-car-tunnel"style="margin-top: -3px; margin-right: 15px;"></i>Search Car By Brand</a></li>
+                <li class="menulist"><a href="" class="menulist1"><i class="fa-solid fa-car-side"style="margin-top: -3px; margin-right: 8px;"></i>Search Car By Bodytype</a></li>
+                <li class="menulist"><a href="" class="menulist1"><i class="fa-solid fa-tags"style="margin-top: -3px; margin-right: 13px;"></i>Search Car By Budget</a></li>
+                <li class="menulist"><a href="" class="menulist1"><i class="fa-solid fa-newspaper"style="margin-top: -3px; margin-right: 13px;"></i>Car News</a></li>
+                <li class="menulist"><a href="" class="menulist1"><i class="fa-solid fa-file-image"style="margin-top: -3px; margin-right: 18px;"></i>Car Wallpapers</a></li>
+                <li class="menulist"><a href="" class="menulist1"><i class="fa-solid fa-panorama"style="margin-top: -3px; margin-right: 6.5px;"></i>Car Renderings</a></li>
+                <li class="menulist"><a href="" class="menulist1"><i class="fa-solid fa-user-tie"style="margin-top: -3px; margin-right: 15px;"></i>About Us</a></li>
+            </ul>
+        </div>
+        <div class="socialmedia">
+            <div class="smlink">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
     </div>
     
 </body>

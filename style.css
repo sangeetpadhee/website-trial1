@@ -81,11 +81,63 @@ body{
     height: 200px;
 }
 
+/*            CAR LIST          */
+.searchbarallcar{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    height: 0px;
+    overflow-y: hidden;
+  }
+  .searchbarallcarlist{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: -10px;
+  }
+  
+  #searchbarcarnamelist{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .searchbarnameprice{
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  
+  .searchbarpriceallcarlist{
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .searchbarcarimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7px;
+    height: 100px;
+    width: 170px;
+    border-radius: 10px;
+  }
+  .searchbarcarimg img{
+    width: 100%;
+    height: auto;
+  }
+  
+
 /*          4th below Where The Choose One Section*/
 
 
 .choosesection{
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,10 +308,10 @@ body{
     text-transform: capitalize;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     margin-top: 20px;
     background-color: #e2e9f4;
-    height: 450px;
+    height: 360px;
     width: 100%;
 }
 .popularcarlist{
@@ -274,9 +326,9 @@ body{
 .popularcarbody{
     box-shadow: rgba(0, 0, 0, 0.16) 1px 5px 12px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     margin: auto;
-    width: 100%;
+    min-width: 300px;
     margin-left: 5px;
-    height: 320px;
+    height: 260px;
     background-color: white;
     border-radius: 16px;
 }
@@ -300,22 +352,71 @@ body{
     flex-direction: column;
     gap: 20px;
     margin-top: 100px;
-    color: #ffffff96;
-    background-color: #202021b3;
-    height: 110px;
+    color: #eae7e796;
+    background-color: #050b20;
+    height: 250px;
     width: 100%;
 }
-
+.follow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.icons{
+    display: flex;
+    gap: 10px;
+}
 
 /*          MENU            */
 
 .menubar{
-    height: 600px;
-    width: 50%;
-    background-color: aqua;
+    height: 420px;
+    width: 65%;
+    background-color: rgb(244, 244, 244);
+    box-shadow: rgba(0, 0, 0, 0.16) 1px 5px 12px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     position: fixed;
     margin-top: 40px;
     border-radius: 5px;
     display: none;
 }
+.menubar1{
+    margin-left: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 25px;
+}
+.menulist{
+    list-style: none;
+}
+.menulist1{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+}
 
+/*      SOCIAL MEDIA        */
+
+.socialmedia{
+    margin-left: 83%;
+    height: 120px;
+    width: 60px;
+    background-color: rgb(244, 244, 244);
+    box-shadow: rgba(0, 0, 0, 0.16) 1px 5px 12px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    position: fixed;
+    margin-top: 42px;
+    border-radius: 5px;
+    display: none;
+}
+.smlink{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
