@@ -23,9 +23,9 @@ window.addEventListener('mouseup',function(event){
 }); 
 
 let popfive=[
-  {Name :"Maruti Suzuki Alto K10", price:"3.9 - 5.9 Lakh (Ex-Show)", img:"https://imgd.aeplcdn.com/227x128/n/cw/ec/127563/alto-k10-exterior-right-front-three-quarter-58.jpeg?isig=0&q=80"},
+  {Name :"Maruti Suzuki Alto K10", price:"3.9 - 5.9 Lakh (Ex-Show)", img:"https://www.marutisuzuki.com/price-list/-/media/B3A899FA94114B57A882046175122FB1.ashx"},
   {Name :"Maruti Suzuki Alto", price:"3.5 - 5.1 Lakh (Ex-Show)", img:"https://imgd.aeplcdn.com/1280x720/cw/ec/39013/Maruti-Suzuki-Alto-Right-Front-Three-Quarter-154833.jpg?wm=0&q=80"},
-  {Name :"Maruti Suzuki S-Presso", price:"4.2 - 6.1Lakh (Ex-Show)", img:"https://imgd.aeplcdn.com/227x128/n/cw/ec/126463/s-presso-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80"},
+  {Name :"Maruti Suzuki S-Presso", price:"4.2 - 6.1Lakh (Ex-Show)", img:"https://gadicampus.com/wp-content/uploads/2022/02/Maruti-S-Presso-Black-1024x576.jpg"},
   {Name:"Renault Kwid", price:"4.08 - 5.31 Lakh", img:"https://imgd.aeplcdn.com/227x128/n/cw/ec/141125/kwid-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80" }
   ]
 let popten=[
