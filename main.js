@@ -285,3 +285,4 @@ searchInput.addEventListener("input", function () {
     choosesec.style.marginTop="30px";
 }
 });
+

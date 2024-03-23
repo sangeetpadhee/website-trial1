@@ -309,7 +309,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin-top: 20px;
+    margin-top: 80px;
     background-color: #e2e9f4;
     height: 360px;
     width: 100%;
@@ -330,6 +330,9 @@ body{
     margin-left: 5px;
     height: 260px;
     background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     border-radius: 16px;
 }
 .popularcarbody{

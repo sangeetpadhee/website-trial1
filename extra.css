@@ -45,8 +45,6 @@
     align-items: center;
   }
   
-  .search,.close-btn {
-  }
   /* styling search-icon */
   .search {
     fill: var(--text-color);
@@ -131,9 +129,6 @@
     user-select: none;
   }
   
-  .slider-item{
-    margin-left: 12px;
-  }
   .slider-item,
   .hidden
   {
@@ -146,7 +141,7 @@
   }
   .slider-btns{
     position: absolute;
-    top:30%;
+    top:40%;
     width: 100%;
     display: flex;
     justify-content: space-between; 
@@ -202,3 +197,11 @@
 
 /*          END PART      */
 
+
+.slider-item{
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
