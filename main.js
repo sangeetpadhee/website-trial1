@@ -37,7 +37,7 @@ let popten=[
 let popfifteen=[
   {Name:"Honda City", price:"11.16 - 14.96 Lakh", img:"https://imgd.aeplcdn.com/227x128/n/cw/ec/134287/city-exterior-right-front-three-quarter-76.jpeg?isig=0&q=80" },
   {Name:"Skoda Slavia", price:"11.53 - 19.13 Lakh", img:"https://imgd.aeplcdn.com/227x128/n/cw/ec/144999/slavia-exterior-right-front-three-quarter-6.jpeg?isig=0&q=80" },
-  {Name :"Maruti Suzuki Grand Vitara", price:"10.7 - 19.8 Lakh (Ex-Show)", img:"https://imgd.aeplcdn.com/227x128/n/cw/ec/123185/grand-vitara-exterior-right-front-three-quarter-4.jpeg?isig=0&q=80"},
+  {Name :"Maruti Suzuki Grand Vitara", price:"10.7 - 19.8 Lakh (Ex-Show)", img:"https://www.varunmaruti.com/uploads/products/colors/grandvitara-grandeur-grey.png"},
   {Name:"Hyundai Creta", price:"10.16 - 17.71 lakh", img:"https://imgd.aeplcdn.com/227x128/n/cw/ec/106815/creta-exterior-right-front-three-quarter-4.png?isig=0&q=80" }
 ]
 let popthirty=[

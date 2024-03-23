@@ -223,7 +223,8 @@
         border-radius: 15px;
         flex-direction: column;
         height: 160px;
-        min-width: 160px;
+        width: 160px;
+        text-align: center;
     }
     .imgsec{
         margin-top: -15px;
@@ -231,7 +232,7 @@
         width: 95%;
         background-image: url(PIC/TRIAL.jpg);
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
     }
     #pricesec{
@@ -254,7 +255,7 @@
     /*             MORE FILTER      */
     
     .formorefilter{
-        font-size: 21px;
+        font-size: 19px;
         margin-top: 25px;
         display: flex;
         flex-direction: column;
@@ -276,7 +277,7 @@
     
     
     .end{
-        font-size: 13px;
+        font-size: 11px;
         display: flex;
         justify-content: center;
         align-items: center;
