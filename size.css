@@ -79,6 +79,7 @@
     min-width: 155px;
 }
 .imgsec{
+    border-radius: 15px;
     margin-top: -15px;
     height: 60%;
     width: 95%;
@@ -227,6 +228,7 @@
         text-align: center;
     }
     .imgsec{
+        border-radius: 15px;
         margin-top: -15px;
         height: 55%;
         width: 95%;
